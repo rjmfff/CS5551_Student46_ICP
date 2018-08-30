@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title> Rachel Singh's ICP2 - Weather Puller </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="icp2.js"></script>
+    <style>
+    <style>
+    </style>
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">ICP2, CS 5551</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container bg-1" id="current-weather">
+    <div class="row">
+        <h2>Current Weather</h2>
+        <p id="which-city"></p>
+        <br>
+
+        <table class="table" id="weather-table">
+            <tr>
+                <th>Time</th>
+                <th>Condition</th>
+                <th>Temperature</th>
+                <th>Feels like</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<hr>
+
+<div class="container bg-1">
+    <h3 class="margin">Weather Puller</h3>
+    
+    <p>Rachel Singh</p>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <p>City</p>
+                <p>
+                    <input type="text" placeholder="Kansas City" id="city" class="form-control">
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>State</p>
+                <p>
+                    <input type="text" placeholder="MO" id="state" class="form-control">
+                </p>
+            </div>
+            <div class="col-md-12">
+                <p><a class="btn btn-lg btn-success pull-right btn-block" href="#" role="button" id="weatherButton">Retrieve Weather</a></p>
+            </div>
+        </div> <!-- row -->
+    </form>
+</div>
+
+<hr>
+
+
+
+
+
+</body>
+</html>
