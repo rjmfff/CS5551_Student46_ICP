@@ -28,8 +28,6 @@ $( document ).ready( function() {
                     + "</tr>";
                 $( "#weather-table" ).append( tableStr );
             }
-
-            $( "#current-weather" ).slideDown( "fast" );
         } );
     }
 
