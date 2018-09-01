@@ -9,69 +9,74 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="icp2.js"></script>
 </head>
 <body>
 
+    <div ng-app="WeatherApp" ng-init="initialize()" ng-controller="WeatherController">
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">ICP2, CS 5551</a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">ICP2, CS 5551</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" id="current-weather">
+            <div class="row">
+                <h2>Current Weather</h2>
+                <p id="which-city">{{city + ", " + state}}</p>
+                <br>
+
+                <table class="table" id="weather-table">
+                    <tr>
+                        <th>Time</th>
+                        <th>Condition</th>
+                        <th>Temperature</th>
+                        <th>Feels like</th>
+                    </tr>
+                    <tr ng-repeat="x in weather">
+                        <td>{{x.time}}</td>
+                        <td>{{x.condition}}</td>
+                        <td>{{x.temperature}}</td>
+                        <td>{{x.feelslike}}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
-</nav>
 
-<div class="container" id="current-weather">
-    <div class="row">
-        <h2>Current Weather</h2>
-        <p id="which-city"></p>
-        <br>
+        <hr>
 
-        <table class="table" id="weather-table">
-            <tr>
-                <th>Time</th>
-                <th>Condition</th>
-                <th>Temperature</th>
-                <th>Feels like</th>
-            </tr>
-        </table>
-    </div>
-</div>
-
-<hr>
-
-<div class="container">
-    <h3 class="margin">Weather Puller</h3>
-    
-    <p>Rachel Singh</p>
-    <form method="post">
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <p>City</p>
-                <p>
-                    <input type="text" placeholder="Olathe" id="city" class="form-control">
-                </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <p>State</p>
-                <p>
-                    <input type="text" placeholder="KS" id="state" class="form-control">
-                </p>
-            </div>
-            <div class="col-md-12 col-xs-12">
-                <p><a class="btn btn-lg btn-success pull-right btn-block" href="#" role="button" id="weatherButton">Retrieve Weather</a></p>
-            </div>
-        </div> <!-- row -->
-    </form>
-</div>
-
-<hr>
-
-
-
-
+        <div class="container">
+            <h3 class="margin">Weather Puller</h3>
+            
+            <p>Rachel Singh</p>
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-5 col-xs-12">
+                        <p>City</p>
+                        <p>
+                            <input type="text" placeholder="{{city}}" id="city" class="form-control" ng-model="city">
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <p>State</p>
+                        <p>
+                            <input type="text" placeholder="{{state}}" id="state" class="form-control" ng-model="state">
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <p>&nbsp;</p>
+                        <button class="btn btn-success pull-right btn-block" role="button" ng-click="getWeather()">Retrieve Weather</button>
+                    </div>
+                </div> <!-- row -->
+            </form>
+        </div>
+        
+    </div> <!-- end of ng-app -->
 
 </body>
 </html>
