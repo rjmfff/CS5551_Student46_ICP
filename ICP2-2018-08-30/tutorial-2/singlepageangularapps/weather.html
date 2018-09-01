@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style>
+        .weatherModule {
+            background: #f2f2f2;
+            height: 150px;
+            width: 250px;
+            border: 1px dashed #ccc;
+            padding: 1em;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+</head>
+<body>
+<div ng-app="weather" ng-controller="weatherctrl">
+    <button id="btn" ng-click="getWeather()"> Show Weather </button>
+    <br/>
+    <br/>
+    <div class="weatherModule">
+        {{currentweather}}<br>
+        <img src={{currentIcon}}>
+    </div>
+</div>
+
+<script>
+    angular.module('weather',[])
+        .controller('weatherctrl', function($scope, $http) {
+            console.log("hi");
+            $scope.getWeather = function() {
+                $http.get('http://api.wunderground.com/api/4bbbc25f4f5946dd/conditions/q/MO/Kansas%20City.json').success(function(data) {
+                    console.log(data);
+                    temp = data.current_observation.temp_f;
+                    icon = data.current_observation.icon_url;
+                    weather = data.current_observation.weather;
+                    console.log(temp);
+                    $scope.currentweather = "Current temperature in Kansas City is " + temp + " F and " + weather;
+                    $scope.currentIcon = icon;
+                })
+            }
+
+        });
+</script>
+</body>
+</html>

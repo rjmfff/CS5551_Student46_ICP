@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginapp">
+<head>
+    <meta t="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        .login, .input
+        {
+            max-width: 800px;
+            color: #555;
+            font-size: 18px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+    </style>
+    <script>
+        var app = angular.module('loginapp', []);
+        app.controller('LoginController', function ($scope) {
+            $scope.logins = [];
+            $scope.login = function (user, pwd) {
+                localStorage.setItem("name" , user);
+                $scope.logins.push( localStorage.getItem("name") + " was logged in.");
+            };
+        });
+    </script>
+</head>
+
+<body>
+
+<div ng-app ng-controller="LoginController">
+    <div class="login">Hello {{ user.firstName }}</div><br/>
+    <div class="input">
+        Username: <input ng-model="user.firstName"></input>
+        <br/><br/>
+        Password: <input ng-model="user.pwd" type="password"></input>
+        <br/><br/>
+        <input type="submit" ng-click="login(user.firstName, user.pwd)" value="Login"></input>
+        <br/><br/>
+    </div>
+    <div ng-repeat="login in logins">{{ login }}</div>
+</div>
+
+</body>
+</html>

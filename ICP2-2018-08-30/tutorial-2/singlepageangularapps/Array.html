@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="" ng-app="ArrayExample">
+<head>
+  <meta t="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays Controllers Filters</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>    
+  <link rel="stylesheet" href="css/main.css">    
+</head>
+
+<body>
+    <div ng-controller="myController">
+       <p>Search For: <input type="text" ng-model="search"></p>
+       <ul>
+         <li ng-repeat="x in names | filter:search | orderBy:'country'">
+              {{ fullName(x.firstname , x.lastname) +  ' , ' + (x.country | uppercase) }}
+         </li>
+       </ul>
+    </div>
+</body>
+
+    <script>
+    angular.module('ArrayExample', []).controller('myController', function($scope) {
+    $scope.names = [
+        {firstname:'Megha',   lastname:'Nagabhushan' , country:'India'},
+        {firstname:'Rohith',      lastname:'Nagulapati' ,           country:'India'},
+        {firstname:'Vijaya',   lastname:'Kumari',        country:'India'},
+        {firstname:'Sidrah',      lastname:'Junaid',           country:'Pakistan'},
+        {firstname:'Saria',      lastname:'G',        country:'Iran'},
+        {firstname:'Tony',      lastname:'Williams' ,      country:'USA'}
+    ];
+        $scope.fullName= function(first, last) {
+            return last + " " + first;
+        }
+        
+    });
+    
+    </script>
+</html>

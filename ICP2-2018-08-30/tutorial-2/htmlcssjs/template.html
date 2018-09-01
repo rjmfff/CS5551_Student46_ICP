@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Coding A CSS3 &amp; HTML5 One Page Template</title>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        
+        <!-- Internet Explorer HTML5 enabling code: -->
+        <!--[if IE]>
+        <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+        
+        <style type="text/css">
+        .clear {
+          zoom: 1;
+          display: block;
+        }
+        </style>
+        
+    </head>
+    
+    <body>
+    	
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+    
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+            
+                <hgroup>
+                    <h1>HTML5/CSS3/Javascript</h1>
+                    <h3>Tutorial-II</h3>
+                </hgroup>
+
+                <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+                        <li><a href="#article1">HTML5</a></li>
+                        <li><a href="#article2">CSS3</a></li>
+                        <li><a href="#article3">Javascript</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section id="articles"> <!-- A new section with the articles -->
+
+				<!-- Article 1 start -->
+
+                <div class="line"></div>  <!-- Dividing line -->
+                
+                <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>HTML5</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    
+                    	<figure> <!-- The figure tag marks data (usually an image) that is part of the article -->
+                            <a href="https://www.w3schools.com/html/html5_intro.asp"><img src="img/html5.png" width="620" height="340" /></a>
+                        </figure>
+                        <p>HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.
+                            It's actually three kinds of code: HTML, which provides the structure; Cascading Style Sheets (CSS),
+                            which take care of presentation; and JavaScript, which makes things happen. </p>
+                    </div>
+                </article>
+                
+				<!-- Article 1 end -->
+				<!-- Article 2 start -->
+
+                <div class="line"></div>
+                
+                <article id="article2">
+                    <h2>CSS3</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="https://www.w3schools.com/css/"><img src="img/CSS3.jpg" width="620" height="340" /></a>
+                        </figure>
+                        
+                        <p>CSS3 is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1.
+                            It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations,
+                            as well as new layouts like multi-columns, flexible box or grid layouts.
+                            Experimental parts are vendor-prefixed and should either be avoided in production environments,
+                            or used with extreme caution as both their syntax and semantics can change in the future.</p>
+                    </div>
+                </article>
+                
+				<!-- Article 2 end -->
+				<!-- Article 3 start -->
+
+                <div class="line"></div>
+                
+                <article id="article3">
+                    <h2>Javascript</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="https://www.w3schools.com/js/"><img src="img/js.jpeg" width="600" height="300" /></a>
+                        </figure>
+                        
+                        <p>JavaScript is a programming language that allows you to implement complex things on web pages —
+                            every time a web page does more than just sit there and display static information for you to look at
+                            — displaying timely content updates, or interactive maps, or animated 2D/3D graphics, or scrolling video
+                            jukeboxes, etc. — you can bet that JavaScript is probably involved.
+                            It is the third layer of the layer cake of standard web technologies,
+                            two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
+                    </div>
+                </article>
+                
+				<!-- Article 3 end -->
+            </section>
+
+        <footer> <!-- Marking the footer section -->
+           <div class="line"></div>
+           <p>Copyright 2018</p> <!-- Change the copyright notice -->
+           <a href="#" class="up">Go UP</a>
+           <!--<a href="http://tutorialzine.com/2010/02/html5-css3-website-template/" class="by">Template by Tutorialzine</a>-->
+        </footer>
+            
+		</section> <!-- Closing the #page section -->
+        <!-- JavaScript Includes -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
