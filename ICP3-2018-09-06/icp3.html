@@ -37,6 +37,7 @@
 
             <br>
 
+            <!-- Output information goes here. -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -60,6 +61,7 @@
 
             <br>
 
+            <!-- User input goes here. -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -95,31 +97,38 @@
         }
 
         $scope.callWatson = function( text ) {
+            // Build the URL string for the API call to Watson
             var wURL = watson_url + "/v1/synthesize?"
                 + "username=" + watson_username
                 + "&password=" + watson_password
                 + "&text=" + text;
             console.log( wURL );
-            
+
+            // Create a new Audio object, load the URL, and play the sound.
             var watsonSound = new Audio( wURL );
             watsonSound.play();
         }
 
         $scope.callNutritionix = function( text ) {
+            // Build the URL string for the API call to Nutritionix
             var nURL = "https://api.nutritionix.com/v1_1/"
                 + "search/" + text + "?results=0:1&fields=*"
                 + "&appId=" + nutritionix_appid
                 + "&appKey=" + nutritionix_appkey;
             console.log( nURL );
-            
+
+            // Use AJAX to get the information
             $http( { method: "GET", url: nURL } ).then( function successCallback( response ) {
                 console.log( response );
+                // Copy the information into scope variables.
                 $scope.calories = response["data"]["hits"][0]["fields"]["nf_calories"];
                 $scope.weight = response["data"]["hits"][0]["fields"]["nf_serving_weight_grams"];
                 $scope.food = response["data"]["hits"][0]["fields"]["item_name"];
+
+                // Speak the name of the recipe using Watson.
                 $scope.callWatson( "I found " + response["data"]["hits"][0]["fields"]["item_name"] );
             } );
-        }
+         }
     } );
 </script>
 <!-- Javascript END -->
