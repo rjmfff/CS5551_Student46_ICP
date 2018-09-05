@@ -37,15 +37,17 @@
 
             <br>
 
-            <canvas id="audio-player"></canvas>
-
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <p>Food:</p>
+                        <p ng-bind="food">{{ food }}</p>
+                    </div>
+                    <div class="col-md-4">
                         <p>Calories:</p>
                         <p ng-bind="calories">{{ calories }}</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <p>Serving Weight:</p>
                         <p ng-bind="weight">{{ weight }}</p>
                     </div>
@@ -80,25 +82,39 @@
 <!-- Javascript START -->
 <script>
     var app = angular.module( "RecipeApp", [] );
-    app.controller( "recipeController", function( $scope ) {
+    app.controller( "recipeController", function( $scope, $http ) {
         $scope.initialize = function() {
-            $scope.calories = 0;
-            $scope.weight = 0;
         }
 
         $scope.getRecipe = function() {
-            $scope.callWatson( "Looking for \"" + $scope.recipeName + "\" recipe." );
+            $scope.callNutritionix( $scope.recipeName );
         }
 
         $scope.callWatson = function( text ) {
-            var url = watson_url + "/v1/synthesize?"
+            var wURL = watson_url + "/v1/synthesize?"
                 + "username=" + watson_username
                 + "&password=" + watson_password
                 + "&text=" + text;
-            console.log( url );
+            console.log( wURL );
             
-            var watsonSound = new Audio( url );
+            var watsonSound = new Audio( wURL );
             watsonSound.play();
+        }
+
+        $scope.callNutritionix = function( text ) {
+            var nURL = "https://api.nutritionix.com/v1_1/"
+                + "search/" + text + "?results=0:1&fields=*"
+                + "&appId=" + nutritionix_appid
+                + "&appKey=" + nutritionix_appkey;
+            console.log( nURL );
+            
+            $http( { method: "GET", url: nURL } ).then( function successCallback( response ) {
+                console.log( response );
+                $scope.calories = response["data"]["hits"][0]["fields"]["nf_calories"];
+                $scope.weight = response["data"]["hits"][0]["fields"]["nf_serving_weight_grams"];
+                $scope.food = response["data"]["hits"][0]["fields"]["item_name"];
+                $scope.callWatson( "I found " + response["data"]["hits"][0]["fields"]["item_name"] );
+            } );
         }
     } );
 </script>
