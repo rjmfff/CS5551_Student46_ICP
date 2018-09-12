@@ -72,5 +72,22 @@
             android:text="Convert"
             android:textColor="#ba6349" />
 
+        <Button
+            android:id="@+id/btn_Logout"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Log Out"
+            android:textColor="#ba6349" />
+
+        <EditText
+            android:id="@+id/debugText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
     </LinearLayout>
 </RelativeLayout>

@@ -1,11 +1,19 @@
 #Internal package file, do not edit.
-#Tue Sep 11 16:57:34 CDT 2018
+#Tue Sep 11 17:58:00 CDT 2018
 1.base=/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/transforms/dexMerger/debug/27
+2.path=classes.dex
 0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/transforms/dexMerger/debug/29
+3.set=DEX
+2.set=DEX
 1.baseType=DIRECTORY
-count=2
+3.path=classes.dex
+count=4
 1.set=DEX
 0.path=classes.dex
+3.base=/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/transforms/dexMerger/debug/30
 0.set=DEX
 0.base=/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/transforms/dexMerger/debug/26
+2.baseType=DIRECTORY
 1.path=classes.dex

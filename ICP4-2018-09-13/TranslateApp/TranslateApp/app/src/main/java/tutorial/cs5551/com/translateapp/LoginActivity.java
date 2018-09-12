@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        gotoTranslator();
     }
 
     @Override
@@ -68,9 +69,14 @@ public class LoginActivity extends AppCompatActivity {
         else
         {
             //This code redirects the from login page to the home page.
-            Intent redirect = new Intent(LoginActivity.this, TranslateActivity.class);
-            startActivity(redirect);
+            gotoTranslator();
         }
 
+    }
+
+    public void gotoTranslator()
+    {
+        Intent redirect = new Intent(LoginActivity.this, TranslateActivity.class);
+        startActivity(redirect);
     }
 }

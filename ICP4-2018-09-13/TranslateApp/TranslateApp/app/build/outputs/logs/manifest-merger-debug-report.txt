@@ -4,12 +4,12 @@ ADDED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateA
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:2:1-26:12
-MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/dfcb4b29ca54476f082278336485a639/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/cbb7e564cc4676c27f8c773b56ed13d2/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/40a436c4204b2efdc877ac043f833136/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/7bf1e0335dd46f9c3bd94683055e24d9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:recyclerview-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/c437e56af8e56fd99f96fac4769e0358/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/01aa64ff2880e7d6b1fe2ed85b0c666f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/547538228ccc3bc2132d1c549ba6e9f8/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/17b0396b0681709343bd28aeaa3df0e1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/f11b535f97be38696aa7d5f7ee50722a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/4c10c8c7e3c1ef4821e3fef92da4c277/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/ef461dabbc473a6b95a3466805538e2a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/cc5075ea739e618894b2c765bf2a14ac/AndroidManifest.xml:17:1-24:12
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:2:1-26:12
@@ -33,16 +33,16 @@ ADDED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateA
 		ADDED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:4:22-64
 application
 ADDED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:5:5-24:19
-MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/dfcb4b29ca54476f082278336485a639/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/dfcb4b29ca54476f082278336485a639/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/cbb7e564cc4676c27f8c773b56ed13d2/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/cbb7e564cc4676c27f8c773b56ed13d2/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/40a436c4204b2efdc877ac043f833136/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/40a436c4204b2efdc877ac043f833136/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/7bf1e0335dd46f9c3bd94683055e24d9/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/7bf1e0335dd46f9c3bd94683055e24d9/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/01aa64ff2880e7d6b1fe2ed85b0c666f/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/01aa64ff2880e7d6b1fe2ed85b0c666f/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/547538228ccc3bc2132d1c549ba6e9f8/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/547538228ccc3bc2132d1c549ba6e9f8/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/17b0396b0681709343bd28aeaa3df0e1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/17b0396b0681709343bd28aeaa3df0e1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/f11b535f97be38696aa7d5f7ee50722a/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/f11b535f97be38696aa7d5f7ee50722a/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/4c10c8c7e3c1ef4821e3fef92da4c277/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/4c10c8c7e3c1ef4821e3fef92da4c277/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/cc5075ea739e618894b2c765bf2a14ac/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/cc5075ea739e618894b2c765bf2a14ac/AndroidManifest.xml:22:5-20
 	android:supportsRtl
 		ADDED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml:9:9-35
 	android:label
@@ -83,22 +83,22 @@ uses-sdk
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/dfcb4b29ca54476f082278336485a639/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/dfcb4b29ca54476f082278336485a639/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/cbb7e564cc4676c27f8c773b56ed13d2/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/cbb7e564cc4676c27f8c773b56ed13d2/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/40a436c4204b2efdc877ac043f833136/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/40a436c4204b2efdc877ac043f833136/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/7bf1e0335dd46f9c3bd94683055e24d9/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/7bf1e0335dd46f9c3bd94683055e24d9/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/c437e56af8e56fd99f96fac4769e0358/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/c437e56af8e56fd99f96fac4769e0358/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/01aa64ff2880e7d6b1fe2ed85b0c666f/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/01aa64ff2880e7d6b1fe2ed85b0c666f/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/547538228ccc3bc2132d1c549ba6e9f8/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/design-23.2.1.aar/547538228ccc3bc2132d1c549ba6e9f8/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/17b0396b0681709343bd28aeaa3df0e1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/17b0396b0681709343bd28aeaa3df0e1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/f11b535f97be38696aa7d5f7ee50722a/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.2.1.aar/f11b535f97be38696aa7d5f7ee50722a/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/4c10c8c7e3c1ef4821e3fef92da4c277/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.2.1.aar/4c10c8c7e3c1ef4821e3fef92da4c277/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/ef461dabbc473a6b95a3466805538e2a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/ef461dabbc473a6b95a3466805538e2a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/cc5075ea739e618894b2c765bf2a14ac/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/cc5075ea739e618894b2c765bf2a14ac/AndroidManifest.xml:20:5-43
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml
 INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/cbb7e564cc4676c27f8c773b56ed13d2/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.2.1] /home/rayechell/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/17b0396b0681709343bd28aeaa3df0e1/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml
 		ADDED from /home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/src/main/AndroidManifest.xml
