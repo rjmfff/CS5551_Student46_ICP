@@ -21,6 +21,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import okhttp3.Call;
@@ -35,6 +36,8 @@ public class TranslateActivity extends AppCompatActivity {
     String API_KEY = "b29103a702edd6a";
 
     String YANDEX_API_KEY = "trnsl.1.1.20151023T145251Z.bf1ca7097253ff7e.c0b0a88bea31ba51f72504cc0cc42cf891ed90d2";
+
+    // UI elements we will be using
     String sourceText;
     TextView outputTextView;
     Spinner fromSpinner;
@@ -46,24 +49,26 @@ public class TranslateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_translate);
+
+        // Create variables to store references to the UI elements, so we can modify them in the Java code.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         outputTextView = (TextView) findViewById(R.id.txt_Result);
         fromSpinner = (Spinner) findViewById(R.id.spin_from);
         toSpinner = (Spinner) findViewById(R.id.spin_to);
         debugText = (TextView) findViewById(R.id.debugText);
+
+        setSupportActionBar(toolbar);
 
         populateSupportedLanguages();
     }
 
     public void populateSupportedLanguages() {
         // https://tech.yandex.com/translate/doc/dg/reference/getLangs-docpage/
-        /* Result looks like this:      {"dirs":["az-ru","be-bg","be-cs","be-de","be-en","be-es","be-fr", ...,"uk-tr"]}  */
+        /* Result looks like this:      {"dirs":["az-ru","be-bg","be-cs","be-de","be-en","be-es","be-fr", ...,"uk-tr"], "langs": {"af":"Afrikaans"}, ...}  */
 
         String getURL = "https://translate.yandex.net/api/v1.5/tr.json/getLangs?key="
                 + YANDEX_API_KEY +
-                "&text=" + sourceText +"&" +
-                "lang=en-es&[format=plain]&[options=1]&[callback=set]";//The API service URL
+                "&ui=en";//The API service URL
 
         OkHttpClient client = new OkHttpClient();
         try { // attempt to do the following. Catch the error (below) if there's an exception (error).
@@ -88,6 +93,8 @@ public class TranslateActivity extends AppCompatActivity {
 
                     // Retrieve the results, which are in JSON format
                     final JSONObject jsonResult;
+                    final JSONObject langMap;
+                    final Iterator<String> keys;
                     final String result = response.body().string();
 
                     // Try the following...
@@ -95,13 +102,15 @@ public class TranslateActivity extends AppCompatActivity {
 
                         // Turn the results into a JSON object, and then get the array within it.
                         jsonResult = new JSONObject(result);
-                        JSONArray convertedTextArray = jsonResult.getJSONArray("dirs");
+                        //JSONArray convertedTextArray = jsonResult.getJSONArray("langs");
+                        langMap = jsonResult.optJSONObject("langs");
+                        keys = langMap.keys();
 
                         // Create a list of strings to store all the language names.
-                        List<String> languageList = new ArrayList<String>();
-                        for (int i = 0; i < convertedTextArray.length(); i++)
+                        List<String> languageList = new ArrayList<>();
+                        while ( keys.hasNext() )
                         {
-                            languageList.add(convertedTextArray.get(i).toString());
+                            languageList.add(langMap.getString(keys.next()));
                         }
 
                         // Create an adapter to link the list of languages to our spinner objects.
@@ -115,6 +124,14 @@ public class TranslateActivity extends AppCompatActivity {
                                 // Update the spinners to contain the language lists.
                                 fromSpinner.setAdapter(languageAdapter);
                                 toSpinner.setAdapter(languageAdapter);
+
+                                // Default "from" to English
+                                int englishPosition = languageAdapter.getPosition("English");
+                                fromSpinner.setSelection(englishPosition);
+
+                                // Default "to" to Spanish
+                                int spanishPosition = languageAdapter.getPosition("Spanish");
+                                toSpinner.setSelection(spanishPosition);
                             }
                         }); // callback
 
@@ -134,12 +151,6 @@ public class TranslateActivity extends AppCompatActivity {
         TextView sourceTextView = (TextView) findViewById(R.id.txt_Email);
 
         sourceText = sourceTextView.getText().toString();
-/*
-        String getURL = "https://translate.yandex.net/api/v1.5/tr.json/translate?" +
-                "key=trnsl.1.1.20151023T145251Z.bf1ca7097253ff7e." +
-                "c0b0a88bea31ba51f72504cc0cc42cf891ed90d2&text=" + sourceText +"&" +
-                "lang=en-es&[format=plain]&[options=1]&[callback=set]";//The API service URL
-*/
 
         String getURL = "https://translate.yandex.net/api/v1.5/tr.json/translate?key="
                 + YANDEX_API_KEY +
