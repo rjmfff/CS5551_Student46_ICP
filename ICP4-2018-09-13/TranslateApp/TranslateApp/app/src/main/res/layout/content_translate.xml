@@ -79,15 +79,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
+            android:onClick="logout"
             android:text="Log Out"
             android:textColor="#ba6349" />
-
-        <EditText
-            android:id="@+id/debugText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textMultiLine" />
 
     </LinearLayout>
 </RelativeLayout>

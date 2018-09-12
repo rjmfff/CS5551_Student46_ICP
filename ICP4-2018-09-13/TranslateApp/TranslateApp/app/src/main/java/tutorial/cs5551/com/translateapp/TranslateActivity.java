@@ -44,7 +44,6 @@ public class TranslateActivity extends AppCompatActivity {
     TextView outputTextView;
     Spinner fromSpinner;
     Spinner toSpinner;
-    TextView debugText;
 
     Map<String, String> langToCode;
 
@@ -59,7 +58,6 @@ public class TranslateActivity extends AppCompatActivity {
         outputTextView = (TextView) findViewById(R.id.txt_Result);
         fromSpinner = (Spinner) findViewById(R.id.spin_from);
         toSpinner = (Spinner) findViewById(R.id.spin_to);
-        debugText = (TextView) findViewById(R.id.debugText);
 
         setSupportActionBar(toolbar);
 
@@ -152,6 +150,11 @@ public class TranslateActivity extends AppCompatActivity {
             outputTextView.setText(ex.getMessage());
         }
 
+    }
+
+    public void logout(View v) {
+        Intent redirect = new Intent(TranslateActivity.this, LoginActivity.class);
+        startActivity(redirect);
     }
 
     public void translateText(View v) {
