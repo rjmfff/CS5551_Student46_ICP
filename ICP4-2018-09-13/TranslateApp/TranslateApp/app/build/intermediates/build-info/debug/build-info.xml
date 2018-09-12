@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="mdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.1.4"
-    timestamp="1536720894743"
+    timestamp="1536722793749"
     token="-4824763862032045001"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="71" />
+        duration="104" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="11" />
+        duration="35" />
     <task
         name="verifier"
-        duration="1" />
+        duration="20" />
 
     <artifact
         location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -89,8 +89,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1536720894743"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1536722793749"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_2.apk"

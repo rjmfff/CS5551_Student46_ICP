@@ -21,8 +21,10 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -44,6 +46,8 @@ public class TranslateActivity extends AppCompatActivity {
     Spinner toSpinner;
     TextView debugText;
 
+    Map<String, String> langToCode;
+
     Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,8 @@ public class TranslateActivity extends AppCompatActivity {
         debugText = (TextView) findViewById(R.id.debugText);
 
         setSupportActionBar(toolbar);
+
+        langToCode = new HashMap<String, String>();
 
         populateSupportedLanguages();
     }
@@ -90,7 +96,6 @@ public class TranslateActivity extends AppCompatActivity {
                 // This handles a successful API request
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
-
                     // Retrieve the results, which are in JSON format
                     final JSONObject jsonResult;
                     final JSONObject langMap;
@@ -110,12 +115,14 @@ public class TranslateActivity extends AppCompatActivity {
                         List<String> languageList = new ArrayList<>();
                         while ( keys.hasNext() )
                         {
-                            languageList.add(langMap.getString(keys.next()));
+                            String key = keys.next();
+                            String value = langMap.getString(key);
+                            languageList.add(value);
+                            langToCode.put(value, key);
                         }
 
                         // Create an adapter to link the list of languages to our spinner objects.
                         final ArrayAdapter<String> languageAdapter = new ArrayAdapter<String>(TranslateActivity.this, android.R.layout.simple_spinner_item, languageList);
-                        languageAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
                         // Execute this once the UI thread is ready to update.
                         runOnUiThread(new Runnable() {
@@ -152,10 +159,16 @@ public class TranslateActivity extends AppCompatActivity {
 
         sourceText = sourceTextView.getText().toString();
 
+        String fromLanguage = fromSpinner.getSelectedItem().toString();
+        String fromCode = langToCode.get(fromLanguage);
+
+        String toLanguage = toSpinner.getSelectedItem().toString();
+        String toCode = langToCode.get(toLanguage);
+
         String getURL = "https://translate.yandex.net/api/v1.5/tr.json/translate?key="
                 + YANDEX_API_KEY +
                 "&text=" + sourceText +"&" +
-                "lang=en-es&[format=plain]&[options=1]&[callback=set]";//The API service URL
+                "lang=" + fromCode + "-" + toCode + "&[format=plain]&[options=1]&[callback=set]";//The API service URL
 
         final String response1 = "";
         OkHttpClient client = new OkHttpClient();

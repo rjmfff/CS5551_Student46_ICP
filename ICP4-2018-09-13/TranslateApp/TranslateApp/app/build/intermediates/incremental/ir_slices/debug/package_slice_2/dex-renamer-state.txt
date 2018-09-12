@@ -1,4 +1,4 @@
-#Tue Sep 11 21:54:55 CDT 2018
+#Tue Sep 11 22:26:34 CDT 2018
 base.0=/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/transforms/dexMerger/debug/17
 path.0=classes.dex
 renamed.0=classes.dex
