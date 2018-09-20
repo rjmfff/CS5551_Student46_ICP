@@ -2,13 +2,13 @@
 <instant-run
     abi="x86_64,x86"
     api-level="25"
-    build-mode="COLD"
+    build-mode="FULL"
     density="mdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1536723397271"
+    timestamp="1537310241109"
     token="-4824763862032045001"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -24,12 +24,45 @@
         duration="0" />
 
     <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
         location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1536717964312"
+        timestamp="1537310241109"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -64,32 +97,6 @@
         <artifact
             location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
-        <artifact
-            location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1536723277635"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1536723397271"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/rayechell/STUDY/CS5551_Student46_ICP/ICP4-2018-09-13/TranslateApp/TranslateApp/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
